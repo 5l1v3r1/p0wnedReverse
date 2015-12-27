@@ -15,6 +15,9 @@ For a DNS tunnel you need to run a remote [DNSCat2 Listener](https://github.com/
 
 ### How to Compile it:
 
+When you need to setup a DNS tunnel, then comment/uncomment LHost, LPort and Domain variable and change PowerCat settings.
+Make sure you change the LHost and LPort variable to suit your needs (e.g. Listener IP/Port).
+
 To compile p0wnedReverse you need to import this project within Microsoft Visual Studio or if you don't have access to a Visual Studio installation, you can compile it as follows:
 
 To Compile as x86 binary:
@@ -32,9 +35,6 @@ cd \Windows\Microsoft.NET\Framework64\v4.0.30319
 
 csc.exe /unsafe /reference:"C:\p0wnedReverse\System.Management.Automation.dll" /reference:System.IO.Compression.dll /out:C:\p0wnedReverse\p0wnedReversex64.exe /platform:x64 "C:\p0wnedReverse\*.cs"
 ```
-
-When you need to setup a DNS tunnel, then comment/uncomment LHost, LPort and Domain variable and change PowerCat settings.
-Make sure you change the LHost and LPort variable to suit your needs (e.g. Listener IP/Port).
 
 p0wnedReverse uses the System.Management.Automation namespace, so make sure you have the System.Management.Automation.dll within your source path when compiling outside of Visual Studio.
 
@@ -58,6 +58,8 @@ cd \Windows\Microsoft.NET\Framework64\v4.0.30319 (Or newer .NET version folder)
 InstallUtil.exe /logfile= /LogToConsole=false /U C:\p0wnedReverse\p0wnedReversex64.exe
 ```
 
+You could also use p0wnedReverse as a Payload for Spear Phishing Campaigns by embedding it into Excel Macro's e.g.
+
 ### What's inside the runspace:
 
 #### The following PowerShell tools/functions are included:
@@ -70,3 +72,12 @@ InstallUtil.exe /logfile= /LogToConsole=false /U C:\p0wnedReverse\p0wnedReversex
 
 Powershell functions within the Runspace are loaded in memory from
 [Base64 encode strings](https://github.com/Cn33liz/p0wnedShell/blob/master/Utilities/PS1ToBase64.ps1).
+
+### Todo:
+
+* Automatic generation of custom Binaries using a Windows Forms Application.
+
+### Contact:
+
+To report an issue or request a feature, feel free to contact me at:
+Cornelis ```at``` dePlaa.com or [@Cn33lis](https://twitter.com/Cneelis)
