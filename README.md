@@ -40,7 +40,7 @@ p0wnedReverse uses the System.Management.Automation namespace, so make sure you 
 
 ### How to use it:
 
-Just run the executables or...
+Setup your DNS or TCP listener and run the executable or...
 
 To run as x86 binary and bypass Applocker (Credits for this great bypass go to Casey Smith aka subTee):
 
