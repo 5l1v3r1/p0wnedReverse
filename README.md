@@ -16,7 +16,7 @@ For a DNS tunnel you need to run a remote [DNSCat2 Listener](https://github.com/
 ### How to Compile it:
 
 When you need to setup a DNS tunnel, then comment/uncomment LHost, LPort and Domain variable and change PowerCat settings.
-Make sure you change the LHost and LPort variable to suit your needs (e.g. Listener IP/Port).
+For TCP communication make sure you change the LHost and LPort variable to suit your needs (e.g. Listener IP/Port).
 
 To compile p0wnedReverse you need to import this project within Microsoft Visual Studio or if you don't have access to a Visual Studio installation, you can compile it as follows:
 
