@@ -7,7 +7,7 @@ License: BSD 3-Clause
 
 ### What is it:
 
-p0wnedReverse is based on the same code used as [p0wnedShell](https://github.com/Cn33liz/p0wnedShell) and can be used as an Reversed (Connect-Back) shell.
+p0wnedReverse is based on the same code as [p0wnedShell](https://github.com/Cn33liz/p0wnedShell) and can be used as an Reversed (Connect-Back) shell.
 Communication Channels are made using Besimorhino's PowerCat code and you can choose between DNS TXT or TCP Communication Channels.
 When the code is run it also starts an C# Keylogger that logs all keystrokes to "$env:Temp\KeyLog-*". You can use the Get-Keystrokes command within the shell to display all logged keystrokes.   
 For a DNS tunnel you need to run a remote [DNSCat2 Listener](https://github.com/iagox86/dnscat2) and for TCP communication you can use [p0wnedShell](https://github.com/Cn33liz/p0wnedShell) to setup a Powercat Listener.
