@@ -75,7 +75,7 @@ Powershell functions within the Runspace are loaded in memory from
 
 ### Todo:
 
-* Automatic generation of custom Binaries using a Windows Forms Application.
+* Create a Windows Forms Application that automaticly generates binaries with custom PowerShell functions and VBScript Macros for Spear Phishing Campaigns.
 
 ### Contact:
 
