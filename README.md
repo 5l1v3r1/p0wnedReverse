@@ -77,7 +77,6 @@ Powershell functions within the Runspace are loaded in memory from
 
 * Create a Windows Forms Application that automaticly generates binaries with custom PowerShell functions and VBScript macros for Spear Phishing Campaigns.
 * Built-in persistency.
-* Need to figure out how to bypass the new Anti-Malware Scan Interface (AMSI) in Windows10/Powershell 5 
 
 ### Contact:
 
