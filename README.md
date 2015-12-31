@@ -67,6 +67,7 @@ You could also use p0wnedReverse as a Payload for Spear Phishing Campaigns by em
 * PowerSploit Invoke-Shellcode
 * Besimorhino's PowerCat
 * Nishang Invoke-CredentialsPhish
+* Nishang Show-TargetScreen
 * Cn33liz Get-KeyStrokes (simple function that reads keystrokes from KeyLogger file)
 * Cn33liz Invoke-Meterpreter (wrapper function around Invoke-Shellcode that needs an IP and Port argument to setup an reversed https meterpreter tunnel. Please note that this function only works with the x86 version of p0wnedReverse)
 
